@@ -1,0 +1,36 @@
+[    
+    {
+        "name": "Immunocal Azul",
+        "link": "https://www.immunotec.com/masquesaludable/shop/product/1845000",
+        "vp": 180,
+
+        "pvp": 619.00,
+        "pvpcp": 557.10,
+        "pvpcpae": 464.25
+    
+
+    },
+    {
+        "name": "Immunocal Platinum",
+        "link": "https://www.immunotec.com/masquesaludable/shop/product/1845100",
+        "vp": 250,
+
+        "pvp": 861.00,
+        "pvpcp": 774.90,
+        "pvpcpae": 645.75
+    
+
+    },
+    {
+        "name": "Optimizer Rojos y Verdes",
+        "link": "https://www.immunotec.com/masquesaludable/shop/product/1845609",
+        "vp": 150,
+
+        "pvp": 447.00,
+        "pvpcp": 402.30,
+        "pvpcpae": 335.25
+
+    
+
+    }
+]
