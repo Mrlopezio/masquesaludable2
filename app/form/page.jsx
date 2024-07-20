@@ -5,7 +5,7 @@ import styles from "./form.module.scss";
 
 const FORMSPARK_ACTION_URL = "https://submit-form.com/19ToP4iWl";
 
-const page = (props) => {
+const Home = (props) => {
   console.log("props", props);
   const [mailBody, setMailBody] = useState();
   const [formSubmitted, setFormSubmitted] = useState(false);
@@ -261,4 +261,4 @@ const page = (props) => {
   );
 };
 
-export default page;
+export default Home;
