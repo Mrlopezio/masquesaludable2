@@ -7,6 +7,7 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Bienvenido a MasQueSaludable</h1>
       <Link href="/tarifa">Ir a la tarifa</Link>
+      <Link href="/form">Ir al formulario</Link>
     </main>
   );
 }
