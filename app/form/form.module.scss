@@ -1,0 +1,147 @@
+$max-width: 1200px;
+
+$screen-sm: 578px;
+$screen-md: 700px;
+$screen-bg: 900px;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 1rem;
+
+  &-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    // padding: 1rem;
+
+    &-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      @media only screen and (min-width: $screen-sm) {
+        gap: 1.5rem;
+        flex-direction: column;
+      }
+    }
+    &-item {
+      position: relative;
+      flex: 1;
+
+      label {
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+        left: 1rem;
+        font-family: "__Montserrat_d14939", sans-serif;
+        font-size: 0.9rem;
+        line-height: 1.1rem;
+        font-weight: 500;
+        color: color(black-05);
+        transition: 400ms ease-in-out;
+        pointer-events: none;
+        transform-origin: left;
+
+        @media only screen and (min-width: $screen-sm) {
+          font-size: 1rem;
+          line-height: 1.2rem;
+        }
+      }
+      input,
+      textarea {
+        padding: 1rem;
+        background-color: color(white-03);
+        border: none;
+        outline: none;
+        border-radius: 0.5rem;
+        width: 100%;
+        font-size: 1rem;
+
+        transition: 400ms ease-in-out;
+      }
+      textarea {
+        resize: none;
+        height: 80px;
+      }
+
+      textarea:focus,
+      input:focus {
+        background-color: color(white-05);
+      }
+
+      textarea:focus ~ label,
+      input:focus ~ label {
+        top: -0.5rem;
+        scale: 0.9;
+      }
+      textarea:not(:placeholder-shown) ~ label,
+      input:not(:placeholder-shown) ~ label {
+        top: -0.5rem;
+        scale: 0.9;
+      }
+    }
+  }
+
+  .submit-button {
+    margin: 0 !important;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    background-color: #3333b2;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    transition: 400ms ease-in-out;
+    &:hover {
+      filter: brightness(1.4);
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    // border: 1px solid rgb(15, 118, 15);
+    -webkit-text-fill-color: #d1d1d1;
+    -webkit-box-shadow: 0 0 0px 1000px #3d3d3d inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+.formSending {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation: rotate 1s linear infinite;
+  }
+  .loader::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    inset: 0px;
+    border-radius: 50%;
+    border: 5px solid color(black);
+    animation: prixClipFix 2s linear infinite;
+  }
+}
+.formSubmitted {
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 2px solid color(yellow);
+}
