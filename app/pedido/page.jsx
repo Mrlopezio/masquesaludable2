@@ -120,7 +120,7 @@ const Home = (props) => {
                                     id="email"
                                     placeholder=" "
                                     name="email"
-                                    required
+                                    // required
                                     autoComplete="email"
                                     onChange={(e) => checkInputs(e.target.id, e.target.value)}
                                 />
