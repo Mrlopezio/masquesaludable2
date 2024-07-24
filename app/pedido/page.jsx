@@ -124,7 +124,7 @@ const Home = (props) => {
                                     autoComplete="email"
                                     onChange={(e) => checkInputs(e.target.id, e.target.value)}
                                 />
-                                <label htmlFor="email">Correo Electrónico *</label>
+                                <label htmlFor="email">Correo electrónico(si tiene)</label>
                             </div>
 
                             <div className={styles["contact-form-row"]}>
@@ -220,7 +220,7 @@ const Home = (props) => {
                                 required
                                 onChange={(e) => checkInputs(e.target.id, e.target.value)}
                             ></input>
-                            <label htmlFor="postalcode">Código Postal</label>
+                            <label htmlFor="postalcode">Código Postal(Si lo sabe)</label>
                         </div>
                         <div className={styles["contact-form-item"]}>
                             <button className={styles["submit-button"]} type="submit">
